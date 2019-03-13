@@ -2,7 +2,7 @@
 # Python Final Project
 # Average of soccer shots
 
-#Greeting
+# Greeting Function
 name = input("What is your name: ")
 
 def greeting():
@@ -15,8 +15,7 @@ greeting()
 
 try:
     how_many_games = int(input("Enter how many games you would like to average?: "))
-    print('Your amount of games you would like to average: ', str(how_many_games))
-
+    print('This is the amount of games you would like to average (if this is incorrect please restart): ', str(how_many_games))
 except ValueError:
     print('That was not a proper number')
 
@@ -35,12 +34,17 @@ print("")
 
 # Average Number of shots per games
 average = total / totals
+
+x = average
+
+# While Loop
+while x > -1:
+    print(x)
+    break
+
 print('\n')
 
-x = total
 
 
-print ('Shot Percentage: ' + str(round(average, 2)))
 
-
-print('The average number of shots you made was ', str(round(average, 2)), 'goals per game')
+print('The average number of shots you made was', str(round(average, 2)), 'goals per game')
